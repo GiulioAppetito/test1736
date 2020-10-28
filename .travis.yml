@@ -1,0 +1,13 @@
+language: java
+jdk:
+-
+openjdk11
+addons:
+sonarcloud
+organization: GiulioAppetito
+token: 44ec792e488df9dece366ce79282485b663387ae
+script:
+-
+ant build
+-
+sonar scanner
